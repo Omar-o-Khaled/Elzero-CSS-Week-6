@@ -1,0 +1,49 @@
+div{
+    width: 600px;
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    margin: 30px auto;
+    position: relative;
+    border-left: 5px solid #ff5722 ;
+    border-right: 5px solid #673ab7  ;
+}
+
+div::first-letter{
+
+    color: red;
+}
+
+
+div::before{
+    content: "";
+    width: 101%;
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    background-image: linear-gradient(to right, 
+        #ff5722 0,#ff5722 20%,
+        #2196f3 20%,#2196f3 40%,
+        #8bc34a 40%,#8bc34a 60%,
+        #e91e63 60%,#e91e63 80%,
+        #673ab7 80%);
+}
+
+div::after{
+    content: "";
+    width: 101%;
+    height: 5px;
+    position: absolute;
+    bottom:  0px;
+    left: -1px;
+    background-image: linear-gradient(to right, 
+    #ff5722 0,#ff5722 20%,
+    #2196f3 20%,#2196f3 40%,
+    #8bc34a 40%,#8bc34a 60%,
+    #e91e63 60%,#e91e63 80%,
+    #673ab7 80%);
+}
+
+
